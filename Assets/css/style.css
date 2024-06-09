@@ -1,0 +1,71 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("https://i.redd.it/dlj3efhjywy41.jpg");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+  }
+
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-left:200px;
+    margin-right:200px;
+}
+
+.question_page {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*hide the bullet points from listings*/
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 50px;
+   }
+
+li {
+    margin-bottom: 10px;
+}
+
+/*display only the intro page and hide the rest sections*/
+.question_page, 
+.submit_page, 
+.highscore_page, 
+#check_line {
+    display:none;
+}
+
+.button{
+    background:white;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+.button:hover{
+  
+    background-color:rgb(205, 245, 247);
+  
+}
